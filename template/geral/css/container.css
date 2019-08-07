@@ -1,0 +1,17 @@
+.container > * {
+  border: 1px solid black;
+  padding: 3px;
+  min-width: 20px;
+}
+.container.dotted > * {
+  border-style: dotted;
+}
+.container.solid > * {
+  border-style: solid;
+}
+.container.hidden > * {
+  border-style: hidden;
+}
+.container p {
+  margin: 0;
+}

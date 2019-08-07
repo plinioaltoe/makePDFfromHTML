@@ -1,0 +1,5 @@
+coverage/
+config/
+scripts/
+node_modules/
+template/

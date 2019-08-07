@@ -1,0 +1,16 @@
+p {
+  min-height: 15px;
+}
+
+p.align-center {
+  text-align: center;
+}
+p.align-right {
+  text-align: right;
+}
+p.align-left {
+  text-align: left;
+}
+p.justify {
+  text-align: justify;
+}

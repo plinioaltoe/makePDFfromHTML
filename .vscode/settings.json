@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "files.eol": "\n",
+  "editor.rulers": [120],
+  "editor.tabSize": 2
+}

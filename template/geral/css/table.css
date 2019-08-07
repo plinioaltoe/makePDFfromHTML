@@ -1,0 +1,28 @@
+.table {
+  display: table;
+  border-collapse: collapse;
+}
+.table p {
+  margin: 0;
+}
+.table.bordered > * > * > * {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+.table-row {
+  display: table-row;
+}
+.table-cell {
+  display: table-cell;
+  min-width: 15px;
+  padding: 3px;
+}
+.table-cell > :first-child {
+  margin-top: 3px;
+}
+.table-cell > :last-child {
+  margin-bottom: 3px;
+}
+.table-cell > * {
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}

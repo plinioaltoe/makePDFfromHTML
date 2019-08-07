@@ -1,0 +1,28 @@
+extends ./layout.pug
+
+block estilo
+  include ./css/cabecalho.css
+
+block conteudo
+  include ./logoFake.pug
+  .container
+    .cabecalho
+      .logo
+        img(src=logoFake())
+        .logoTexto Fake Logo Here
+      .textoContainer
+        .instituicao Instituição
+        .titulo titulo
+        .tema tema
+        .professor Professor(a): nomeProfessor
+        .dataAplicacao Data: 10/11/2019
+    fieldset.dadosAluno
+      legend.dadosAluno Identificação do estudante
+        .nomeContainer 
+          .nomeTitulo Nome:
+          .nomeTexto nomeCandidato
+        .matriculaContainer
+          .matriculaTitulo Matrícula: 
+          .matriculaTexto matricula
+      .assinatura Assinatura: 
+        .linha

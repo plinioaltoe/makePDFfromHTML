@@ -1,0 +1,31 @@
+:not(p).align-center,
+:not(p).align-right,
+:not(p).align-left {
+  display: flex;
+  max-width: 100%;
+}
+:not(p).align-center {
+  justify-content: center;
+}
+:not(p).align-right {
+  float: right;
+}
+:not(p).align-left {
+  float: left;
+}
+
+.image,
+.table,
+.container {
+  margin: 5px 0;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+.vertical-align-middle {
+  vertical-align: middle;
+}
+.vertical-align-bottom {
+  vertical-align: bottom;
+}

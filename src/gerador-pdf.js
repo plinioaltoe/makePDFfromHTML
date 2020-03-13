@@ -8,14 +8,17 @@ class GeradorPdf {
   }
 
   async gerarPdf(html, pathArquivo) {
-    console.log(html)
+    
 
     let { htmlCorpo } = html
-    let page = await this.browser.newPage()
-    await page.goto(`data:text/html,${htmlCorpo}`, {
-      waitUntil: 'networkidle0',
-    })
 
+    console.log(htmlCorpo)
+
+    let page = await this.browser.newPage()
+    // await page.goto(`data:text/html,${htmlCorpo}`, {
+    //   waitUntil: 'networkidle0',
+    // })
+    await page.setContent(htmlCorpo, { waitUntil: 'networkidle2' })
     let objetoParaGerarPdf = {
       path: pathArquivo,
       displayHeaderFooter: true,
@@ -33,7 +36,7 @@ class GeradorPdf {
 
     await page.pdf(objetoParaGerarPdf)
 
-    page.close()
+    // page.close()
   }
 
   async close() {

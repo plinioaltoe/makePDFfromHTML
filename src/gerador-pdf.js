@@ -15,9 +15,9 @@ class GeradorPdf {
     console.log(htmlCorpo)
 
     let page = await this.browser.newPage()
-    // await page.goto(`data:text/html,${htmlCorpo}`, {
-    //   waitUntil: 'networkidle0',
-    // })
+    await page.goto(`data:text/html,${htmlCorpo}`, {
+      waitUntil: 'networkidle0',
+    })
     await page.setContent(htmlCorpo, { waitUntil: 'networkidle2' })
     let objetoParaGerarPdf = {
       path: pathArquivo,
@@ -36,7 +36,7 @@ class GeradorPdf {
 
     await page.pdf(objetoParaGerarPdf)
 
-    // page.close()
+    page.close()
   }
 
   async close() {
